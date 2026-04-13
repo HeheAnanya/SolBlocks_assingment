@@ -23,8 +23,8 @@ const batches = [
 
         <div className="batch">
           {batches.map((b) => (
-            <div key={b.label} className={`card ${b.active ? "active" : ""}`}>
-              <span className="label">{b.label}</span>
+            <div key={b.label} className={`footer_card ${b.active ? "active" : ""}`}>
+              <span className="footer_label">{b.label}</span>
               <span className={`price ${b.active ? "orange_text" : ""}`}>{b.price}</span>
             </div>
           ))}

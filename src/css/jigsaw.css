@@ -1,0 +1,124 @@
+#root {
+  position: relative;
+  z-index: 1;
+}
+.jigsaw-section {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto 32px;
+}
+.jigsaw {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.jigsaw_pics {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.pieceImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+.puzzleImg {
+  position: absolute;
+  bottom: 12%;
+  right: 18%;
+  width: 20%;
+  animation: float 3.5s ease-in-out infinite;
+  pointer-events: none;
+}
+.arrowImg {
+  position: absolute;
+  bottom: 16%;
+  right: -4%;
+  width: 26%;
+  pointer-events: none;
+}
+.jigsaw_info {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.jigsaw_title {
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #fff;
+  margin: 0;
+}
+.orange_text {
+  color: #f97316;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 14px 18px;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s;
+}
+.card:hover {
+  background: rgba(255, 255, 255, 0.11);
+}
+.card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+}
+.value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+@media (max-width: 900px) {
+  .jigsaw-section {
+    width: 92%;
+  }
+
+  .jigsaw {
+    flex-direction: column;
+  }
+
+  .jigsaw_info {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50%       { transform: translateY(-14px) rotate(-5deg); }
+}
