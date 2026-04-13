@@ -1,0 +1,8 @@
+body{
+  margin: 0;
+  background-image: url("/Users/ananyanarang/Desktop/AVELIX/solblocks-frontend-internship/src/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
