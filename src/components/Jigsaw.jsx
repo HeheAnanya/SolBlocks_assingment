@@ -8,7 +8,7 @@ import "../css/jigsaw.css"
 
 const Jigsaw = () => {
   return (
-    <section className="jigsaw-section">
+    <section className="jigsaw_main">
       <div className="jigsaw">
         <div className="jigsaw_pics">
           <img src={piece} alt="jigsaw_piece" className="pieceImg" />
